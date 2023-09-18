@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 1px solid black;
+            background-color: aquamarine;
+            width: min-content;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        i am doing a course in programming hero. <br>
+        <br>hello
+    </div>
+    function InitialFocus() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
+    const initialRef = React.useRef(null)
+    const finalRef = React.useRef(null)
+
+    return (
+    <>
+        <Button onClick={onOpen}>Open Modal</Button>
+        <Button ml={4} ref={finalRef}>
+            I'll receive focus on close
+        </Button>
+
+        <Modal initialFocusRef={initialRef} finalFocusRef={finalRef} isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay />
+            <ModalContent>
+                <ModalHeader>Create your account</ModalHeader>
+                <ModalCloseButton />
+                <ModalBody pb={6}>
+                    <FormControl>
+                        <FormLabel>First name</FormLabel>
+                        <Input ref={initialRef} placeholder='First name' />
+                    </FormControl>
+
+                    <FormControl mt={4}>
+                        <FormLabel>Last name</FormLabel>
+                        <Input placeholder='Last name' />
+                    </FormControl>
+                </ModalBody>
+
+                <ModalFooter>
+                    <Button colorScheme='blue' mr={3}>
+                        Save
+                    </Button>
+                    <Button onClick={onClose}>Cancel</Button>
+                </ModalFooter>
+            </ModalContent>
+        </Modal>
+    </>
+    )
+    }
+</body>
+
+</html>

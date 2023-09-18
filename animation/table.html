@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .table-container{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000000;
+    }
+    .table-body{
+        position: relative;
+        height: 100px;
+        width: 600px;
+        transform: skew(45deg);
+        background: linear-gradient(#c7c7cc4d,rgb(230,200,20,0.3));
+    }
+    .table-stand1{
+        position: absolute;
+        width: 30px;
+        height: 200px;
+        background: white;
+        bottom:-45px;
+        left: 430px;
+    }
+    .table-stand2{
+        position: absolute;
+        width: 30px;
+        height: 300px;
+        background: white;
+        top:280px;
+        left: 340px;
+    }
+    .table-stand3{
+        position: absolute;
+        width: 30px;
+        height: 300px;
+        background: white;
+        bottom:-45px;
+        left: 430px;
+    }
+    .table-stand4{
+        position: absolute;
+        width: 30px;
+        height: 300px;
+        background: white;
+        bottom:-45px;
+        left: 430px;
+    }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <div class="table-body"></div>
+        <div class="table-stand1"></div>
+        <div class="table-stand2"></div>
+        <div class="table-stand3"></div>
+        <div class="table-stand4"></div>
+    </div>
+</body>
+</html>

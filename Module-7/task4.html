@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive layout II</title>
+    <style>
+        img {
+            width: 50vw;
+            height: 100vh;
+        }
+
+        .item {
+            width: 100%;
+            display: flex;
+            border: 2px solid skyblue;
+            gap: 10px;
+        }
+
+        .image {
+            display: flex;
+            align-items: end;
+        }
+
+        .info button {
+            width: 100px;
+            height: 40px;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 60;
+        }
+
+        @media screen and (max-width: 576px) {
+            .item {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
+
+            img {
+                width: 100vw;
+            }
+            .info{
+                width: 60vh;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="food-container">
+        <div class="item">
+            <div class="image">
+                <img src="./images/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg" alt="">
+            </div>
+            <div class="info">
+                <div >
+                    <h3>Pizza</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi exercitationem reiciendis iure sit
+                        accusantium doloribus deserunt iste harum quod? Placeat aliquam provident magni adipisci ipsum
+                        necessitatibus error praesentium dolores qui. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Delectus totam facere provident odio sint architecto iure officia itaque quae
+                        doloremque aut in perspiciatis nisi, at, voluptatibus ullam, cum tenetur adipisci.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="./images/hamburger-1238246_1280.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3>Burger</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ea neque consequuntur assumenda
+                    esse quia fugiat ab, rerum architecto laudantium, nesciunt quasi alias tenetur nulla obcaecati rem
+                    commodi voluptate et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minus excepturi
+                    illum nemo, recusandae dicta ipsa alias nesciunt labore enim consequatur doloremque molestias
+                    deleniti quisquam tenetur. Tempora ea odit atque.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

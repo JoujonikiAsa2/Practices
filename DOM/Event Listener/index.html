@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">DOM er ajke special events</h1>
+
+    <!-- option 1: directly set on the html element
+    we will use this sometimes-->
+    <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+
+    <!-- option 2: add the sunction name -->
+    <button onclick="makeRed()">Make Red</button>
+
+    <!-- option 3: acces by id name -->
+    <button id="blueButton">Make Blue</button>
+
+    <!-- option 3(another): acces by id name -->
+    <button id="make-purple">Make Purple</button>
+    
+    <!-- option 4: event by addEventListener -->
+    <button id="make-pink">Make Pink</button>
+
+    <!-- option 4(another): event by addEventListener -->
+    <button id="make-green">Make Green</button>
+
+    <!-- option 4(Final-most useable) : event by addEventListener -->
+    <button id="make-skyblue">Make Sky blue</button>
+
+    <script src="./index.js"></script>
+    <script>
+        // We will use this most of the time
+        document.getElementById('make-skyblue').addEventListener('click', function(){
+            document.body.style.backgroundColor = '#89CFF0';
+        });
+    </script>
+</body>
+
+</html>

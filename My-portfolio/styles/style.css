@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 4em;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+   
+   
+}
+a{
+     margin-right: 20px;
+     text-decoration: none;
+     color: black;
+     
+}
+.header-container{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-info{
+    width: 40%;
+    height: 40vh;
+}
+.containt-description{
+    padding: 1em 0;
+}
+#profile{
+    border-radius: 80px;
+    position: relative;
+    bottom: s5vh;
+    right: 20vh;
+
+}
+.download-cv{
+    width: 10em;
+    height: 2.5em;
+    border-radius: 2px;
+    border: 0;
+    background-color: #FF6464;
+}

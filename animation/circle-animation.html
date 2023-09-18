@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .body_container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkcyan;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+
+            }
+        }
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: palevioletred;
+            border: 8px dotted red;
+            /* transform: rotateY(45deg); */
+            animation: rotate 2s  linear infinite; 
+        }
+       
+    </style>
+</head>
+
+<body>
+    <marquee behavior="alternative" direction="right"><h1>CSS Rotating Circle</h1></marquee>
+    
+    <section class="body_container">
+        <div class="circle">
+        </div>
+    </section>
+    
+</body>
+
+</html>

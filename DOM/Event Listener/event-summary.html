@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fina DOM Event Handlers</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <p id="input-text-display">Default input text</p>
+    <input type="text" id="input-field">
+    <button id="btn-update">Update</button><br><br>
+    <button onclick="handleOnClick()">Button click by onclick function</button>
+    <button id="event-listener">Handle event by addEventListener</button>
+    <script>
+        // option 1:
+        function handleOnClick(){
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'Handler by function on click attribute';
+        }
+
+        // option 2:
+        document.getElementById('event-listener').addEventListener('click',function(){
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = "Text updated by addEventListener Button"
+        });
+
+        // option 2(recap):
+        document.getElementById('btn-update').addEventListener('click',function(){
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+            const p =  document.getElementById('input-text-display');
+            p.innerText = inputText;
+            // input field empty kore
+            inputField.value = '';
+            
+        });
+
+    </script>
+</body>
+</html>

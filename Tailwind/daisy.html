@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Daisy UI</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>I explore Tailwind</h1>
+            <h3>Now i will expore the Use of Daisy UI</h3>
+            <button class="btn">Click Me</button>
+            <button class="btn btn-secondary">Click Me</button>
+            <button class="btn btn-primary">Click Me</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-success">Success</button><button class="btn" diasabled="diasabled">Disable
+                Button</button><button class="btn btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </section>
+        <section>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">Do you like tailwinf css?
+                  <Translate text="Click to open this one and close others" />
+                </div>
+                <div class="collapse-content"> 
+                  <p>Yes, I do</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    whare do you live?
+                  <Translate text="Click to open this one and close others" />
+                </div>
+                <div class="collapse-content"> 
+                  <p>Dhaka</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    Who is your favorite teacher?
+                  <Translate text="Click to open this one and close others" />
+                </div>
+                <div class="collapse-content"> 
+                  <p>No one</p>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div class="">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/jacket-1.png"></figure>
+                      <h2 class="card-title">
+                        Shoes!
+                        <div class="badge badge-secondary">NEW</div>
+                      </h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div> 
+                        <div class="badge badge-outline">Products</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/jacket-2.png"></figure>
+                      <h2 class="card-title">
+                        Shoes!
+                        <div class="badge badge-secondary">NEW</div>
+                      </h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div> 
+                        <div class="badge badge-outline">Products</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/jacket-3.png"></figure>
+                      <h2 class="card-title">
+                        Shoes!
+                        <div class="badge badge-secondary">NEW</div>
+                      </h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <div class="badge badge-outline">Fashion</div> 
+                        <div class="badge badge-outline">Products</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+          <div class="carousel w-full">
+            <div id="item1" class="carousel-item w-3/4">
+              <img src="/images/jacket-3.png" class="w-3/4" />
+            </div> 
+            <div id="item2" class="carousel-item w-full">
+              <img src="/images/jacket-4.png" class="w-3/4" />
+            </div> 
+            <div id="item3" class="carousel-item w-full">
+              <img src="/images/jacket-5.png" class="w-3/4" />
+            </div> 
+            <div id="item4" class="carousel-item w-full">
+              <img src="/images/jacket-6.png" class="w-3/4" />
+            </div>
+          </div> 
+          <div class="flex justify-center w-full py-2 gap-2">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+            <a href="#item3" class="btn btn-xs">3</a> 
+            <a href="#item4" class="btn btn-xs">4</a>
+          </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

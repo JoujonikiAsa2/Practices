@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .news-item {
+            position: relative;
+        }
+
+        img {
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .news {
+            width: 48vw;
+            height: 48vh;
+            margin: auto;
+            display: block;
+            padding: 15px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 0;
+        }
+
+        .news-item1 {
+            display: flex;
+        }
+
+        .news-item2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        @media screen and (max-width:576px) {
+            .news-item {
+                display: block;
+            }
+
+            img {
+                width: 100vw;
+                height: 50vh;
+
+            }
+
+            .news {
+                width: 40vw;
+                height: 48vh;
+                margin: auto;
+                display: block;
+                padding-bottom: 30vh;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="news-item news-item1">
+            <div><img src="./images/joshua-hanson-e616t35Vbeg-unsplash.jpg" alt=""></div>
+            <div class="news">
+                <h3>News 1</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptatem excepturi cum fuga! Eos
+                    iure tempore iste incidunt inventore adipisci praesentium recusandae animi quo nemo quos eveniet,
+                    commodi aliquid iusto cum consequatur doloremque dolore repellat aspernatur, reprehenderit harum ex
+                    neque quaerat rerum? Itaque cupiditate nostrum in, quam dicta ipsam, quae numquam modi perspiciatis
+                    fugit inventore aliquid! Tempore molestias inventore animi culpa eius quaerat cum, obcaecati autem
+                    itaque, aliquam officia sunt maxime odio, vel voluptates. Perspiciatis accusantium odio, cumque
+                    dolorum ad necessitatibus amet animi voluptatum. Vel, in sunt, repellat ipsam omnis, reiciendis
+                    rerum excepturi possimus illum sed deleniti aliquid repellendus voluptatem?
+                </p>
+            </div>
+        </div>
+        <div class="news-item news-item2">
+            <div><img src="./images/tiger.jpg" alt=""></div>
+            <div class="news">
+                <h3>News 1</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptatem excepturi cum fuga! Eos
+                    iure tempore iste incidunt inventore adipisci praesentium recusandae animi quo nemo quos eveniet,
+                    commodi aliquid iusto cum consequatur doloremque dolore repellat aspernatur, reprehenderit harum ex
+                    neque quaerat rerum? Itaque cupiditate nostrum in, quam dicta ipsam, quae numquam modi perspiciatis
+                    fugit inventore aliquid! Tempore molestias inventore animi culpa eius quaerat cum, obcaecati autem
+                    itaque, aliquam officia sunt maxime odio, vel voluptates. Perspiciatis accusantium odio, cumque
+                    dolorum ad necessitatibus amet animi voluptatum. Vel, in sunt, repellat ipsam omnis, reiciendis
+                    rerum excepturi possimus illum sed deleniti aliquid repellendus voluptatem?
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

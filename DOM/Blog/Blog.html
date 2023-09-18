@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+    <script>
+        window.onload = function() {
+        // Get the value from localStorage
+        var value = localStorage.getItem('myValue');
+        var value2 = localStorage.getItem('myValue2');
+        var value3 = localStorage.getItem('myValue3');
+        
+        // Display the value on the page
+        const blogContainer = document.getElementById('blog-writing-area');
+        const div = document.createElement('div');
+        div.innerHTML = 
+        `
+        <h4>Name: ${value}</h4>
+        <h6>Name: ${value2}</h6>
+        <p>Name: ${value3}</p>
+
+        `
+        blogContainer.appendChild(div)
+        commentBox.value = '';
+        commentBox.value2 = '';
+        commentBox.value3 = '';
+      };
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span class="asa">Asa</span>'s Blog World</div>
+            <div class="nav-bars">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Blog.html">Blogs</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="blog-writing-area" id="blog-writing-area">
+            <!-- <div class="blog" id="blogSection" style="display:block; gap: 0em; color: blue; border: 2px solid lawngreen;text-align: center; width:300px;">
+                <p id="value-output"></p>
+                <p id="value-output2"></p>
+                <p id="value-output3"></p>
+            </div> -->
+        </div>
+    </main>
+    <footer>&copy;copyright by asa 2023</footer>
+    <!-- <script src="./index.js"></script> -->
+</body>
+
+</html>

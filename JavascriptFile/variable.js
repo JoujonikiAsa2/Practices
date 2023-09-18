@@ -1,0 +1,11 @@
+var price = 20;
+var age = 23;
+var temperature = 35;
+var weight = 36;
+var population = 1200000;
+var money = 300;
+var name = 'ASA Roy';
+var friend = 'nabi';
+var village = 'chamta';
+var friendVillage=friend + ' ' + village;
+console.log(friendVillage);

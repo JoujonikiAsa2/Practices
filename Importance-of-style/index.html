@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector get importance more than the universal selector */
+        @keyframes walk{
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(90deg);
+            }
+        }
+        h3{
+            color: fuchsia;
+            color: orange;
+        }
+        *{
+            color: limegreen;
+        }
+        h3{
+            color: olive;
+            display: flex;
+            justify-content: center;
+            
+            font-size: 1rem;
+        }
+        .purple{
+            color: purple;
+        }
+        .blue{
+            color: blue;
+        }
+        .first, .second, .third, .forth{
+            width: 20vw;
+            height: 10vh;
+        }
+        .first{
+            background-color: hsl(271, 11%, 57%);
+        }
+        .second{
+            background-color: hsl(167, 46%, 55%);
+        }
+        .third{
+            background-color: hwb(56 21% 25%);
+        }
+        .forth{
+            background-color: rgb(235, 155, 168);
+            animation-name: walk;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .first:hover{
+            transform: translate(10vh, 0vh);
+            transition: 3s;
+        }
+        .second:hover{
+            transform: rotate(45deg);
+            transition: 3s;
+        }
+        .third:hover{
+            transform:skew(30deg);
+            transition: 3s;
+        }
+        .forth:hover{
+            transform:rotate(90deg);
+            transition: 3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <h3  class="purple blue">My awesome heading 1</h3>
+    </div>
+    <div class="second">
+        <h3 style="color: red;">My awesome heading 1</h3>
+    </div>
+    <div class="third">
+        <h3 class="purple blue">My awesome heading 1</h3>
+    </div>
+    <div class="forth">
+        <h3>My awesome heading 1</h3>
+    </div>
+</body>
+</html>

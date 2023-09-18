@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td {
+            border-collapse: collapse;
+            border: 1px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <label for="First-element">First element: <input type="text" id="x"></label><br> <br>
+        <label for="Second-element">Second element: <input type="text" id="y"></label> <br><br>
+        <input type="submit" value="Calculate Addition" onclick="addition()">
+
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td id="first"></td>
+                <td id="second"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function addition() {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            document.getElementById("first").innerHTML = x;
+            document.getElementById("second").innerHTML = y;
+        }
+
+    </script>
+</body>
+
+</html>
